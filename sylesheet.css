@@ -1,0 +1,65 @@
+.wrap {
+    background-color: #C25936;
+    width: 1250px;
+    height: 1180px;
+    margin: 0 auto;
+    border-radius: 60px;
+    border: 2px solid black;
+}
+
+.navbar {
+    margin: 20px auto;
+    width: 960px;
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+
+.grid {
+    padding: 20px 0 0 0;
+    margin: auto;
+    width: 960px;
+}
+
+.square {
+    float: left;
+    border: 1px solid black;
+    background: #00ccff;
+}
+
+.input {
+    display: none;
+    margin-top: 4px;
+}
+
+button {
+    border-radius: 6px;
+    border: 2px solid white;
+    background-color: #008CBA;
+    padding: 6px;
+    margin-top: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button:hover {
+    background-color: #0047b3;
+}
+
+.dial1 {
+    position: absolute;
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin-top: 55%;
+    margin-left: 1%;
+}
+
+.dial2 {
+    position: absolute;
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin-top: 55%;
+    margin-left: 59.5%
+}

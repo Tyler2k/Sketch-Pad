@@ -68,7 +68,7 @@ function setGrid(num) {
 }
 
 function cleanGrid() {
-    $(".square").css("background", "#00ccff").css('opacity', '1');;
+    $(".square").css("background", "#004080").css('opacity', '1');
 }
 
 function randomColor() {

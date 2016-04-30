@@ -50,6 +50,7 @@ button:hover {
     width: 100px;
     height: 100px;
     border-radius: 100%;
+	border: 2px solid black;
     margin-top: 55%;
     margin-left: 1%;
 }
@@ -60,6 +61,7 @@ button:hover {
     width: 100px;
     height: 100px;
     border-radius: 100%;
+	border: 2px solid black;
     margin-top: 55%;
     margin-left: 59.5%;
 }

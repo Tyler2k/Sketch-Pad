@@ -6,10 +6,12 @@
     width: 960px;
     height: 960px;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 60px;
     border-radius: 60px;
     border: 120px solid #C25936;
-    
+    -webkit-box-shadow: 10px -14px 29px 6px rgba(0, 0, 0,0.58);
+    -moz-box-shadow: 10px -14px 29px 6px rgba(0, 0, 0, 0.58);
+    box-shadow: 10px -14px 29px 6px rgba(0, 0, 0, 0.58);
 }
 
 .navbar {
@@ -72,19 +74,29 @@ button:hover {
 }
 
 .title {
-    font-family: Lobster, sans-serif;;
+    position: absolute;
+    font-family: Lobster, sans-serif;
     color: white;
     text-align: center;
     font-size: 3em;
-    margin: -1050px 0 200px 340px;
+    margin: -105px 0 200px 340px;
     text-shadow: 4px 2px black;
-    float: left;    
+    float: left;  
+    padding-top: 16px;
+
 }
 
 .instructions {
-    position: fixed;
     font-family: patua one, sans-serif;;
     font-size: 16px;
-    margin-left: 400px; 
+    text-align: center;
 }
 
+a {
+    text-decoration: none;
+    border: 1px solid black;
+    background: #5cd65c;
+    padding: 2px;
+    border-radius: 4px;
+    color: #0044cc;
+}

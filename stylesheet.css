@@ -98,3 +98,8 @@ a {
     border-radius: 4px;
     color: #0044cc;
 }
+
+h4 {
+    text-align: center;
+    font-style: italic;
+}

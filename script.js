@@ -13,52 +13,36 @@ $(document).ready(function() {
     $(".default").on("click", function() {
         selectedButton = "default";
         $(".input").show("slow");
-        $("#text").keyup(function(e) { // Detects if user presses enter on keyboard instead of enter on screen
-            if (e.keyCode === 13) {
-                setGrid();
-                start(selectedButton);
-            }
-        });
-        $("#enter").on("click", function() {
-            setGrid();
+        $("form").submit(function(evt) {
+            evt.preventDefault();
+            setGrid()
             start(selectedButton);
         });
-
-        $("#text").val(""); // Erases value from text box for next use
+        $("#search").val(""); // Erases value from text box for next use
     });
 
     // Leaves color trails
     $(".trail").click(function() {
         selectedButton = "trail";
         $(".input").show("slow");
-        $("#text").keyup(function(e) { // Detects if user presses enter on keyboard instead of enter on screen
-            if (e.keyCode === 13) {
-                setGrid();
-                start(selectedButton);
-            }
-        });
-        $("#enter").on("click", function() {
-            setGrid();
+        $("form").submit(function(evt) {
+            evt.preventDefault();
+            setGrid()
             start(selectedButton);
         });
-        $("#text").val(""); // Erases value from text box for next use
+        $("#search").val(""); // Erases value from text box for next use
     });
 
     // Displays a random color each time the mouse enters a square
     $(".random").click(function() {
         selectedButton = "random";
         $(".input").show("slow");
-        $("#text").keyup(function(e) { // Detects if user presses enter on keyboard instead of enter on screen
-            if (e.keyCode === 13) {
-                setGrid();
-                start(selectedButton);
-            }
-        });
-        $("#enter").on("click", function() {
-            setGrid();
+        $("form").submit(function(evt) {
+            evt.preventDefault();
+            setGrid()
             start(selectedButton);
         });
-        $("#text").val(""); // Erases value from text box for next use
+        $("#search").val(""); // Erases value from text box for next use
     });
 });
 
@@ -75,7 +59,7 @@ function displayGrid(columns) {
 }
 
 function setGrid() {
-    var size = document.getElementById("text").value;
+    var size = $("#search").val();
     displayGrid(size);
     cleanGrid();
     $(".input").hide("slow");
@@ -102,7 +86,7 @@ Number.prototype.toHex = function() {
         }
 
     }
-// Starts sketch based on what button the user selected
+    // Starts sketch based on what button the user selected
 function start(button) {
     if (button == "default") {
         $(".square").mouseenter(function() {
